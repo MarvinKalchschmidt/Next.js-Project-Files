@@ -1,14 +1,14 @@
 # Next.js-Project-Files
 This repository contains all files and exercises created as part of the lecture "143404 Entwicklung von Web-Anwendungen"
 
-Populäre Webseiten, die mit Next.js gebaut wurden:
+### Populäre Webseiten, die mit Next.js gebaut wurden:
 - TikTok
 - Twitch
 - HBO Max
 - Vodafone
 - Vercel 
 
-Features:
+### Features:
 - Seitenbasiertes Routing (neue Seiten können durch das Anlegen von Komponenten in /pages erstellt werden)
 - Eingebauter Router (React Router obsolet)
 - API Routen (Backend Code mit Node.js unter /pages/api)
@@ -16,8 +16,8 @@ Features:
 - Bild- und Schriftartoptimierung
 - Built-in ESLint und TypeScript Support
 
-
-Topics (Next.js, TypeScript, TailwindCSS):
+## 17.05.23
+### Topics (Next.js, TypeScript, TailwindCSS):
 - Vorraussetzungen für Next.js: JavaScript/TypeScript, React, Node.js
 - Installation: ```npx create-next-app```
 - Wiederholung React.js
@@ -25,5 +25,13 @@ Topics (Next.js, TypeScript, TailwindCSS):
 - Styling mit Tailwind
 - Server-side Rendering (SSR) und Static Site Generation (SSG)
 
+### Übungen
 
-TODO: Research React, ReactDOM, Server-side Rendering
+
+## 24.05.23
+### Topics 
+### Übungen
+
+
+##TODO: Research React, ReactDOM, Server-side Rendering
+
