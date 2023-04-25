@@ -16,14 +16,14 @@ This repository contains all files and exercises created as part of the lecture 
 - Bild- und Schriftartoptimierung
 - Built-in ESLint und TypeScript Support
 
-## 07.05.23
+## 17.05.23
 ### Topics (Next.js, TypeScript, TailwindCSS):
-- Basics für Next.js: JavaScript/TypeScript, React, Node.js 
-- Wiederholung React.js
-- Installation: ```npx create-next-app``` (Bedeutung Ordner und Files erklären)
-- Typescript
-- Styling mit Tailwind
-- Routing mit Next.js vs React Router
+- Basics für Next.js: JavaScript/TypeScript, React, Node.js (Vivi)
+- Wiederholung React.js (Caro)
+- Installation: ```npx create-next-app``` (Bedeutung Ordner und Files erklären) (Marvin)
+- Typescript (Marvin)
+- Styling mit Tailwind (Caro)
+- Routing mit Next.js vs React Router (Vivi)
 
 ### Übungen:
 
