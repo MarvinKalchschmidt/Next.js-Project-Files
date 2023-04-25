@@ -25,13 +25,13 @@ This repository contains all files and exercises created as part of the lecture 
 - Styling mit Tailwind
 - Server-side Rendering (SSR) und Static Site Generation (SSG)
 
-### Übungen
+### Übungen:
 
 
 ## 24.05.23
-### Topics 
-### Übungen
+### Topics: 
+### Übungen:
 
 
-##TODO: Research React, ReactDOM, Server-side Rendering
+## TODO: Research React, ReactDOM, Server-side Rendering
 
