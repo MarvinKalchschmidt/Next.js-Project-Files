@@ -18,12 +18,12 @@ This repository contains all files and exercises created as part of the lecture 
 
 ## 07.05.23
 ### Topics (Next.js, TypeScript, TailwindCSS):
-- Vorraussetzungen für Next.js: JavaScript/TypeScript, React, Node.js
-- Installation: ```npx create-next-app```
+- Basics für Next.js: JavaScript/TypeScript, React, Node.js 
 - Wiederholung React.js
-- Basics Next
-- Routing mit Next.js vs React Router
+- Installation: ```npx create-next-app``` (Bedeutung Ordner und Files erklären)
+- Typescript
 - Styling mit Tailwind
+- Routing mit Next.js vs React Router
 
 ### Übungen:
 
