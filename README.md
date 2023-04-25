@@ -16,20 +16,16 @@ This repository contains all files and exercises created as part of the lecture 
 - Bild- und Schriftartoptimierung
 - Built-in ESLint und TypeScript Support
 
-
-## Topics (Next.js, TypeScript, TailwindCSS):
+## 07.05.23
+### Topics (Next.js, TypeScript, TailwindCSS):
 - Vorraussetzungen für Next.js: JavaScript/TypeScript, React, Node.js
 - Installation: ```npx create-next-app```
 - Wiederholung React.js
 - Basics Next
 - Routing mit Next.js vs React Router
 - Styling mit Tailwind
-- Search Engine Optimization
-
-
 
 ### Übungen:
-
 
 ## 24.05.23
 ### Topics: 
@@ -42,7 +38,6 @@ This repository contains all files and exercises created as part of the lecture 
 ## TODO: Research React, ReactDOM, Server-side Rendering
 
 
-TODO: Research React, ReactDOM, Server-side Rendering
 
 
 ## Getting Started
