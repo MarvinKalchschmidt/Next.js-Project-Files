@@ -21,15 +21,20 @@ This repository contains all files and exercises created as part of the lecture 
 - Vorraussetzungen für Next.js: JavaScript/TypeScript, React, Node.js
 - Installation: ```npx create-next-app```
 - Wiederholung React.js
+- Basics Next
 - Routing mit Next.js vs React Router
 - Styling mit Tailwind
-- Server-side Rendering (SSR) und Static Site Generation (SSG)
+
+
 
 ### Übungen:
 
 
 ## 24.05.23
 ### Topics: 
+- Server-side Rendering (SSR) und Static Site Generation (SSG)
+- SEO
+
 ### Übungen:
 
 
