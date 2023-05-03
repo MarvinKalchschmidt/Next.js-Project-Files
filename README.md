@@ -1,62 +1,47 @@
-# Next.js-Project-Files
-This repository contains all files and exercises created as part of the lecture "143404 Entwicklung von Web-Anwendungen"
-
-## Populäre Webseiten, die mit Next.js gebaut wurden:
-- TikTok
-- Twitch
-- HBO Max
-- Vodafone
-- Vercel 
-
-## Features:
-- Seitenbasiertes Routing (neue Seiten können durch das Anlegen von Komponenten in /pages erstellt werden)
-- Eingebauter Router (React Router obsolet)
-- API Routen (Backend Code mit Node.js unter /pages/api)
-- Schnelle Builds für development / production 
-- Bild- und Schriftartoptimierung
-- Built-in ESLint und TypeScript Support
-
-## 17.05.23
-### Topics (Next.js, TypeScript, TailwindCSS):
-- Basics für Next.js: JavaScript/TypeScript, React, Node.js (Vivi)
-- Wiederholung React.js (Caro)
-- Installation: ```npx create-next-app``` (Bedeutung Ordner und Files erklären) (Marvin)
-- Typescript (Marvin)
-- Styling mit Tailwind (Caro)
-- Routing mit Next.js vs React Router (Vivi)
-
-### Übungen:
-
-## 24.05.23
-### Topics: 
-- Server-side Rendering (SSR) und Static Site Generation (SSG)
-- SEO
-
-### Übungen:
-
-
-## TODO: Research React, ReactDOM, Server-side Rendering
-
-
-
+# Next.js Lecture HdM Master
+This repository contains all files and exercises created as part of the lecture "143404 Entwicklung von Web-Anwendungen". You will work with a Ne(x)tflix Clone to learn about the features and advantages of Next.js.
 
 ## Getting Started
+To follow along please complete the following steps:
 
-First, run the development server:
+1. Install node.js: [https://nodejs.org/en/download](https://nodejs.org/en/download)
+2. Open a terminal and cd into the directory of this repository.
+3. Run the development server ```npm run dev```
+4. Open [https://localhost:3000](https://localhost:3000) with your browser.
 
-```bash
-npm run dev
-```
+# Lecture 17.05.2023
+## Topics
+- Next.js Basics
+- Recap React
+- Installation: ```npx create-next-app```
+- Typescript
+- Styling with Tailwind
+- React Router vs. Routing with Next.js
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Excercises
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Excercise 1/ Recap React: <Head>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Excercise 2/ Recap React: Rows
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Excercise 3/ Styling with Tailwind
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Excercise 4/ Routing
+
+# Lecture 24.05.2023
+## Topics
+- Server-side rendering (SSR) and Static Side Generation (SSG)
+- SEO
+
+# Excercises
+
+## Excercise 1/ 
+
+## Excercise 2/ 
+
+## Excercise 3/ 
+
+## Excercise 4/ 
 
 ## Learn More
 
@@ -71,4 +56,14 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Features:
+- Seitenbasiertes Routing (neue Seiten können durch das Anlegen von Komponenten in /pages erstellt werden)
+- Eingebauter Router (React Router obsolet)
+- API Routen (Backend Code mit Node.js unter /pages/api)
+- Schnelle Builds für development / production 
+- Bild- und Schriftartoptimierung
+- Built-in ESLint und TypeScript Support
+
+## TODO: Research React, ReactDOM, Server-side Rendering
