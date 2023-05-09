@@ -5,6 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'primaryWhite': '#e5e5e5',
+        'secondaryWhite': '#b3b3b3',
+        'primaryGray': '#333333',
+        'secondaryGray': '#454545',
+        'tertiaryGray': '#2a2a2a',
+        'backgroundGray': '#141414'
+      },
       textShadow: {
         md: '2px 2px 4px rgb(0 0 0 / 45%);',
       },
@@ -17,7 +25,6 @@ module.exports = {
   plugins: [
     require('tailwind-scrollbar-hide'),
     require('tailwind-scrollbar'),
-    require('@tailwindcss/line-clamp'),
     require('tailwindcss-textshadow'),
   ],
 }
