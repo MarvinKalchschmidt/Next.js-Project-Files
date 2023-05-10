@@ -5,6 +5,9 @@ import Row from '../components/Row'
 import { Movie } from '../typings'
 import requests from '../utils/requests'
 
+import { useRecoilValue } from 'recoil'
+import { currentMovieState } from '../atoms/movieStateAtom'
+
 interface Props {
   netflixOriginals: Movie[]
   trendingNow: Movie[]
@@ -26,13 +29,13 @@ const Home = ({
   topRated,
   trendingNow,  
 }: Props) => {
+  const currentMovie = useRecoilValue(currentMovieState)
+
   return (
-    <div
-      className={`relative h-screen min-h-[1000px] bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[140vh]`}
-    >
+    <div className={`relative h-screen min-h-[1000px] bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[140vh]`}>
       <Head>
         <title>
-          Home - Nextflix
+            {`${currentMovie?.title || 'Home'} - Nextflix`} 
         </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>

@@ -36,10 +36,10 @@ function Header() {
        
         <ul className="hidden space-x-4 md:flex">
           <li className="headerLink cursor-default font-semibold text-white hover:text-white">Home</li>
-          <li className="headerLink">TV Shows</li>
-          <li className="headerLink">Movies</li>
-          <li className="headerLink">New & Popular</li>
-          <li className="headerLink">My List</li>
+          <li className="headerLink"><Link href={""}>TV Shows</Link></li>
+          <li className="headerLink"><Link href={""}>Movies</Link></li>
+          <li className="headerLink"><Link href={""}>New & Popular</Link></li>
+          <li className="headerLink"><Link href={""}>My List</Link></li>
         </ul>
       </div>
       <div className="flex items-center space-x-5 text-sm font-light">

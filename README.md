@@ -24,9 +24,9 @@ To follow along please complete the following steps:
 
 ## Excercise 2/ Recap React: Rows
 
-## Excercise 3/ Styling with Tailwind
+## Excercise 3/ Routing
 
-## Excercise 4/ Routing
+## Excercise 4/ Styling with Tailwind
 
 # Lecture 24.05.2023
 ## Topics
