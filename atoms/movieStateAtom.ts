@@ -1,3 +1,4 @@
+/*Related to Exercise 2*/
 import { atom } from 'recoil'
 import { Movie } from '../typings'
 

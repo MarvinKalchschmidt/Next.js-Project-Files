@@ -4,22 +4,26 @@ import { baseUrl } from '../constants/movie'
 import { Movie } from '../typings'
 import { FaPlay } from 'react-icons/fa'
 import Image from 'next/image'
+
+/*Related to Exercise 2*/
 import { currentMovieState } from '../atoms/movieStateAtom'
-import { useRecoilState } from 'recoil'
+import { useSetRecoilState } from 'recoil'
 
 interface Props {
-  netflixOriginals: Movie[]
+  nextflixOriginals: Movie[]
 }
 
-function Banner({ netflixOriginals }: Props) {
+function Banner({ nextflixOriginals }: Props) {
   const [movie, setMovie] = useState<Movie | null>(null)
-  const [currentMovie, setCurrentMovie] = useRecoilState(currentMovieState)
+
+  {/*TODO Exercise 2: Implement const setCurrentMovie here, see Recoil useSetRecoilState hook*/} 
+  const setCurrentMovie = useSetRecoilState(currentMovieState)
 
   useEffect(() => {
     setMovie(
-      netflixOriginals[Math.floor(Math.random() * netflixOriginals.length)]
+      nextflixOriginals[Math.floor(Math.random() * nextflixOriginals.length)]
     )
-  }, [netflixOriginals])
+  }, [nextflixOriginals])
 
   return (
     <div className="flex flex-col space-y-2 py-16 md:space-y-4 lg:h-[75vh] lg:justify-end lg:pb-12">
@@ -47,6 +51,7 @@ function Banner({ netflixOriginals }: Props) {
         <button
           className="bannerButton bg-[gray]/70"
           onClick={() => {
+            {/*TODO Exercise 2: Call setCurrentMovie to update currentMovieState with the Thumbnail's movie*/}
             setCurrentMovie(movie)
           }}
         >

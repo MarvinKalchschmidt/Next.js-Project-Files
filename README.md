@@ -20,9 +20,39 @@ To follow along please complete the following steps:
 
 # Excercises
 
-## Excercise 1/ Recap React: <Head>
+## Excercise 1/ Recap React: Rows / Map
+Die ```Row.tsx```-Komponente soll alle Filme eines bestimmten Genres als Thumbnails in einer Side-Scrollbar anzeigen. Die einzelnen Filme werden der Row über die ```movies```-Prop (Liste von ```Movie```-Objekten) übergeben. 
 
-## Excercise 2/ Recap React: Rows
+# Aufgabe:
+Erzeuge dynamisch alle ```Thumbnail```-Objekte einer Row, indem für jeden Eintrag in der ```movies```-Liste ein Thumbnail erzeugt wird. Nutze hierfür die [```map()```-Funktion](https://react.dev/reference/react/Children#children-map) und die bereits existierende ```Thumbnail.tsx```-Komponente.
+
+# Tipp: 
+Das gesamte Tailwind CSS-Styling für die ```Row.tsx```-Komponente existiert bereits und muss nicht angepasst werden.
+
+## Excercise 2/ Customizing Head with Recoil States
+Der ```<title>``` der Webseite (Name des Browser-Tabs) soll sich mit dem Klicken auf den Info-Button des Banners an den Namen des angezeigten Films anpassen. 
+
+# Beispiel: 
+Vorher "Home - Nextflix" -> Klick auf Banner Info-Button -> "Star Wars Episode VI - Nextflix"
+
+Gegeben ist das ```currentMovieState```-Atom in ```atoms/movieStateAtom.ts```. Dieser State beschreibt den zuletzt geklickten Film, dessen Name im Webseiten-Titel angezeigt werden soll.
+
+# Aufgabe:
+1. In ```index.tsx```: 
+Erstelle eine [```<Head>```-Komponente](https://nextjs.org/docs/pages/api-reference/components/head) mit einem ```<title>``` namens 
+"Home - Nextflix" 
+2. In ```Banner.tsx```:
+Erstelle die  Setter-Funktion ```const setCurrentMovie```, die den ```currentMovieState```-State setzt bzw. überschreibt. Nutze hierfür den ```useSetRecoilState```-Hook von Recoil.
+Die Setter-Funktion soll bei jedem Klicken auf den Info-Button ausgeführt werden und den aktuellen Banner-Film im ```currentMovieState```-State speichern.
+3. In ```index.tsx```:
+Erstelle eine Variable, die zum ```currentMovieState``` subscribed ist. Nutze hierfür die ```useRecoilValue```-Funktion von Recoil.
+Ergänze die ```<title>```-Komponente im ```<Head>``` um den Titel des Films, der in ```currentMovieState``` gespeichert ist, sofern dieser nicht ```null``` ist. Der Titel soll das Format "*Titel des gedrückten Banner-Films* - Nextflix" annehmen.
+4. Bonus-Aufgabe:
+Implementiere die selbe Funktion für das Klicken auf ein Thumbnail in der ```Thumbnail.tsx```-Komponente. Der Titel soll das Format "*Titel des gedrückten Thumbnail-Films* - Nextflix" annehmen.
+ 
+# Tipp: 
+Innerhalb von ```<title>``` bzw. TSX-Code können Bedingungen verwendet werden:
+```{`${object1?.title || 'Text in case first condition is undefined'}`} ```
 
 ## Excercise 3/ Routing
 

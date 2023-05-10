@@ -9,7 +9,7 @@ import { useRecoilValue } from 'recoil'
 import { currentMovieState } from '../atoms/movieStateAtom'
 
 interface Props {
-  netflixOriginals: Movie[]
+  nextflixOriginals: Movie[]
   trendingNow: Movie[]
   topRated: Movie[]
   actionMovies: Movie[]
@@ -20,7 +20,7 @@ interface Props {
 }
 
 const Home = ({
-  netflixOriginals,
+  nextflixOriginals,
   actionMovies,
   comedyMovies,
   documentaries,
@@ -29,10 +29,13 @@ const Home = ({
   topRated,
   trendingNow,  
 }: Props) => {
+{/*TODO Exercise 2: Create variable that refers to the currentMovieState atom here*/} 
   const currentMovie = useRecoilValue(currentMovieState)
 
   return (
     <div className={`relative h-screen min-h-[1000px] bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[140vh]`}>
+      
+      {/*TODO Exercise 2: Create <Head> with <title> here*/}  
       <Head>
         <title>
             {`${currentMovie?.title || 'Home'} - Nextflix`} 
@@ -43,7 +46,7 @@ const Home = ({
       <Header />
 
       <main className="relative pl-4 pb-24 lg:space-y-24 lg:pl-16 ">
-        <Banner netflixOriginals={netflixOriginals} />
+        <Banner nextflixOriginals={nextflixOriginals} />
 
         <section className="md:space-y-12">
           <Row title="Trending Now" movies={trendingNow} />
@@ -63,7 +66,7 @@ export default Home
 
 export const getServerSideProps = async () => {
   const [
-    netflixOriginals,
+    nextflixOriginals,
     trendingNow,
     topRated,
     actionMovies,
@@ -72,7 +75,7 @@ export const getServerSideProps = async () => {
     romanceMovies,
     documentaries,
   ] = await Promise.all([
-    fetch(requests.fetchNetflixOriginals).then((res) => res.json()),
+    fetch(requests.fetchNextflixOriginals).then((res) => res.json()),
     fetch(requests.fetchTrending).then((res) => res.json()),
     fetch(requests.fetchTopRated).then((res) => res.json()),
     fetch(requests.fetchActionMovies).then((res) => res.json()),
@@ -84,7 +87,7 @@ export const getServerSideProps = async () => {
 
   return {
     props: {
-      netflixOriginals: netflixOriginals.results,
+      nextflixOriginals: nextflixOriginals.results,
       trendingNow: trendingNow.results,
       topRated: topRated.results,
       actionMovies: actionMovies.results,
