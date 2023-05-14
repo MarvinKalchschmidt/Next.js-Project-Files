@@ -29,11 +29,11 @@ const Home = ({
   topRated,
   trendingNow,  
 }: Props) => {
-{/*TODO Exercise 2: Create variable that refers to the currentMovieState atom here*/} 
+  /*TODO Exercise 2: Create variable that refers to the currentMovieState atom here*/
   const currentMovie = useRecoilValue(currentMovieState)
 
   return (
-    <div className={`relative h-screen min-h-[1000px] bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[140vh]`}>
+    <div className={`h-screen min-h-[1000px] bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[140vh]`}>
       
       {/*TODO Exercise 2: Create <Head> with <title> here*/}  
       <Head>

@@ -1,7 +1,7 @@
-/*Related to Exercise 2*/
+/*Related to Exercise 4*/
 import { atom } from 'recoil'
 
 export const accountState = atom({
     key: 'accountState',
-    default: 'null',
+    default: 'Vivi',
 })
