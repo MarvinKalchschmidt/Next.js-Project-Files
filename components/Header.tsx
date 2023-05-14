@@ -32,7 +32,7 @@ function Header() {
           width={100}       
           height={0}
           className="cursor-pointer object-cover"
-        />
+        />    
        
         <ul className="hidden space-x-4 md:flex">
           {/*TODO Exercise 3: Add <Link> component to <li> with href to the newly created pages (href={"/browse/pageFileName"}*/} 
@@ -45,14 +45,18 @@ function Header() {
       </div>
       <div className="flex items-center space-x-5 text-sm font-light">
         <SearchIcon className="sm hidden h-6 w-6 sm:inline cursor-pointer" />
-        <BellIcon className="h-6 w-6 cursor-pointer" />      
-        <Image
-          src="/account.png"
-          className="cursor-pointer rounded"
-          width={32}
-          height={32}
-          alt={'Account image'}          
-        />
+        <BellIcon className="h-6 w-6 cursor-pointer" />  
+
+        {/*TODO Exercise 3 Bonus: Wrap <Link> component around <Image> component with href to newly created accounts page (also use pageTemplate for that, href={"/accounts"})*/}  
+        <Link href="/accounts">
+          <Image
+            src="/account.png"
+            className="cursor-pointer rounded"
+            width={32}
+            height={32}
+            alt={'Account image'}          
+          />
+        </Link> 
       </div>
     </header>
   )

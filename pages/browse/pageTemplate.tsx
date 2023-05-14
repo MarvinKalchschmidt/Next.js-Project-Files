@@ -1,12 +1,12 @@
 import Head from 'next/head'
-import Header from '../components/Header'
+import Header from '../../components/Header'
 
 export default function PageTemplate(){
     return (
         <div className={`relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511]`}>
             <Head>
                 <title>
-                    {`Movies - Nextflix`} 
+                    {`PageTemplate - Nextflix`} 
                 </title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
