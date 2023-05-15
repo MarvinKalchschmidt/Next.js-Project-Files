@@ -87,10 +87,6 @@ Verwende Breakpoints mithilfe von tailwindcss.
 ```pages/accounts.tsx```, ```components/AccountImage.tsx```, ```public/Marvin.png``` , ```public/Vivi.png```, ```public/Caro.png```   
 Du musst ausschließlich in ```account.tsx``` Code hinzufügen.
 
-# Lecture 24.05.2023
-## Topics
-- Server-side rendering (SSR) and Static Side Generation (SSG)
-- SEO
 
 ## Learn More
 
