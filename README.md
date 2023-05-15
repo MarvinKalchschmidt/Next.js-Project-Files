@@ -12,12 +12,13 @@ To follow along please complete the following steps:
 
 # Lecture 17.05.2023
 ## Topics
-- Next.js Basics
+- Next.js Introduction
 - Recap React
 - Installation: ```npx create-next-app```
 - Typescript
-- Styling with Tailwind
 - React Router vs. Routing with Next.js
+- Styling with Tailwind
+
 
 # Excercises
 
@@ -57,17 +58,29 @@ Innerhalb von ```<title>``` bzw. TSX-Code können Bedingungen verwendet werden:
 
 ## Excercise 3/ Routing
 
+### Aufgabe:
+Erstelle für jeden Button des Headers in Nextflix eine Nested Route im ```browse```-Ordner des ```pages```-Ordners: ​
+#### TV Shows, Movies, New & Popular und My List​
+
+Nutze anschließend die Built-in Component ```<Link>```, um mit einem Klick auf den jeweiligen Button zu den entsprechenden Routen zu gelangen. Gerne kannst du für deine neuen Pages den Code aus dem ```pageTemplate.tsx```-File verwenden.​
+
+### Bonus
+Erstelle eine weitere Seite ```accounts.tsx``` im ```pages```-Ordner auf welche man durch Klick auf das Account-Logo (oben rechts auf der Home-Seite) gelangt.​
+
+### Verwendete Files und Ordner:
+```pages```-Ordner, ```browse```-Ordner, ```Header.tsx```
+
 ## Excercise 4/ Styling with Tailwind
 
 ### Aufgabe:
 Style die ```accounts.tsx```-Seite mithilfe von tailwindcss, damit sie wie im Screenshot aussieht.
 Verwende dafür den bereits vorbereiteten ```AccountImage``` – Component. Außerdem kannst du mit den Bildern im ```public```-Ordner arbeiten. Beim Styling hilft dir das Cheatsheet für tailwindcss. 
-#### Tipp:
+### Tipp:
 Du solltest mit dem Gridsystem von tailwindcss arbeiten.
 
 ### Bonus Aufgabe: 
-Mach die Seite responsive, sodass auf kleinen und großen Bildschirmen gut aussieht. 
-#### Tipp: 
+Mach die Seite responsive, sodass diese auf kleinen und großen Bildschirmen gut aussieht. 
+### Tipp: 
 Verwende Breakpoints mithilfe von tailwindcss.
 
 ### Verwendete Files und Ordner:
@@ -78,16 +91,6 @@ Du musst ausschließlich in ```account.tsx``` Code hinzufügen.
 ## Topics
 - Server-side rendering (SSR) and Static Side Generation (SSG)
 - SEO
-
-# Excercises
-
-## Excercise 1/ 
-
-## Excercise 2/ 
-
-## Excercise 3/ 
-
-## Excercise 4/ 
 
 ## Learn More
 
