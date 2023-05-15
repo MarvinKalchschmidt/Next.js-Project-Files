@@ -59,6 +59,16 @@ Innerhalb von ```<title>``` bzw. TSX-Code können Bedingungen verwendet werden:
 
 ## Excercise 4/ Styling with Tailwind
 
+Style die Accounts-Seite mithilfe von tailwindcss, damit sie wie im Screenshot aussieht.
+Verwende dafür den bereits vorbereiteten ‚AccountImage‘ – Component. Außerdem kannst du mit den Bildern im ‚public‘-Ordner arbeiten. Beim Styling hilft dir das Cheatsheet für tailwindcss. Tipp: Du solltest mit dem Gridsystem von tailwindcss arbeiten.
+
+### Verwendete Files und Ordner:
+pages/accounts.tsx, components/AccountImage.tsx, public/Marvin.png , public/Vivi.png, public/Caro.png
+Du musst ausschließlich in account.tsx Code hinzufügen.
+
+### Bonus Aufgabe: 
+Mach die Seite responsive, sodass auf kleinen und großen Bildschirmen gut aussieht. Tipp: Verwende Breakpoints mithilfe von tailwindcss.
+
 # Lecture 24.05.2023
 ## Topics
 - Server-side rendering (SSR) and Static Side Generation (SSG)
