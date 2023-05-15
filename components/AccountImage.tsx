@@ -11,8 +11,8 @@ function AccountImage({ name }: Props) {
   const setCurrentAccount = useSetRecoilState(accountState)
 
   return (
-    <div>      
-      <div className="m-auto relative h-32 lg:h-40 aspect-square md:hover:scale-110 duration-200 ease-in"
+    <div>
+      <div className="m-auto relative h-32 lg:h-40 aspect-square hover:scale-110 duration-200 ease-in"
         onClick={() => {
           setCurrentAccount(name)
         }}>

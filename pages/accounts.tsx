@@ -9,10 +9,10 @@ const Profiles = () => {
     const account3 = "Caro"
 
     return (
-        <main className="h-screen">     
+        <main className="h-screen">
             <Head>
                 <title>
-                    {"Accounts - Nextflix"} 
+                    {"Accounts - Nextflix"}
                 </title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
@@ -20,26 +20,27 @@ const Profiles = () => {
             <div className="absolute px-4 pt-[18px] lg:px-16 top-0 left-0">
                 <Link href="/">
                     <Image
-                      src="/nextflix.png"
-                      alt="Nextflix logo"
-                      width={100}
-                      height={27.35}
-                      className="cursor-pointer object-cover"
+                        src="/nextflix.png"
+                        alt="Nextflix logo"
+                        width={100}
+                        height={27.35}
+                        className="cursor-pointer object-cover"
                     />
                 </Link>
             </div>
 
-            <div className="flex flex-col h-screen justify-center items-center"> 
-               
-                {/*TODO Exercise 4: Add TailwindCSS here*/}              
+            <div className="flex flex-col h-screen justify-center  mt-28 md:m-0 items-center">
+
+                {/*TODO Exercise 4: Use the existing 'AccountImage' component and tailwindcss utility classes to rebuilt the page as shown in the screenshot. */}
+                {/*TODO Exercise 4 Bonus: Use the breakpoint system of tailwindcss to make the page responsive.*/}
+
                 <div className="text-center pb-10 md:pb-20 text-3xl md:text-5xl">Who's watching?</div>
-                {/*TODO Exercise 4: Add TailwindCSS here*/} 
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-12" >
                     <AccountImage name={account1} />
                     <AccountImage name={account2} />
                     <AccountImage name={account3} />
-                </div>  
-            </div>   
+                </div>
+            </div>
         </main>
     )
 }
