@@ -60,7 +60,7 @@ Innerhalb von ```<title>``` bzw. TSX-Code können Bedingungen verwendet werden:
 ## Excercise 4/ Styling with Tailwind
 
 ### Aufgabe:
-Style die Accounts-Seite mithilfe von tailwindcss, damit sie wie im Screenshot aussieht.
+Style die ```accounts.tsx```-Seite mithilfe von tailwindcss, damit sie wie im Screenshot aussieht.
 Verwende dafür den bereits vorbereiteten ```AccountImage``` – Component. Außerdem kannst du mit den Bildern im ```public```-Ordner arbeiten. Beim Styling hilft dir das Cheatsheet für tailwindcss. 
 #### Tipp:
 Du solltest mit dem Gridsystem von tailwindcss arbeiten.
