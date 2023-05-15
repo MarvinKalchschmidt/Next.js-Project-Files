@@ -64,7 +64,7 @@ Erstelle für jeden Button des Headers in Nextflix eine Nested Route im ```brows
 
 Nutze anschließend die Built-in Component ```<Link>```, um mit einem Klick auf den jeweiligen Button zu den entsprechenden Routen zu gelangen. Gerne kannst du für deine neuen Pages den Code aus dem ```pageTemplate.tsx```-File verwenden.​
 
-### Bonus
+### Bonus Aufgabe:
 Erstelle eine weitere Seite ```accounts.tsx``` im ```pages```-Ordner auf welche man durch Klick auf das Account-Logo (oben rechts auf der Home-Seite) gelangt.​
 
 ### Verwendete Files und Ordner:
