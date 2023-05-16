@@ -8,7 +8,7 @@ import requests from '../utils/requests'
 import { useRecoilValue } from 'recoil'
 import { currentMovieState } from '../atoms/movieStateAtom'
 
-interface Props {
+type Props = {
   nextflixOriginals: Movie[]
   trendingNow: Movie[]
   topRated: Movie[]

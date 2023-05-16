@@ -9,7 +9,7 @@ import Image from 'next/image'
 import { currentMovieState } from '../atoms/movieStateAtom'
 import { useSetRecoilState } from 'recoil'
 
-interface Props {
+type Props = {
   nextflixOriginals: Movie[]
 }
 

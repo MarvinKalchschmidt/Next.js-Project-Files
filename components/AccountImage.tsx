@@ -3,7 +3,7 @@ import Link from "next/link";
 import { accountState } from "atoms/accountStateAtom"
 import { useSetRecoilState } from 'recoil'
 
-interface Props {
+type Props =  {
   name: string
 }
 

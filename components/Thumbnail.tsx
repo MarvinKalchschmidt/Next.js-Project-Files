@@ -5,7 +5,7 @@ import { Movie } from '../typings'
 import { currentMovieState } from '../atoms/movieStateAtom'
 import { useSetRecoilState } from 'recoil'
 
-interface Props {
+type Props =  {
   movie: Movie 
 }
 
