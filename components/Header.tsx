@@ -42,10 +42,10 @@ function Header() {
         <ul className="hidden space-x-4 md:flex">
           {/*TODO Exercise 3: Add <Link> component to <li> with href to the newly created pages (href={"/browse/pageFileName"}*/}
           <li className="headerLink cursor-default font-semibold text-white hover:text-white"><Link href={"/"}>Home</Link></li>
-          <li className="headerLink"><Link href={"/browse/shows"}>TV Shows</Link></li>
-          <li className="headerLink"><Link href={"/browse/movies"}>Movies</Link></li>
-          <li className="headerLink"><Link href={"/browse/latest"}>New & Popular</Link></li>
-          <li className="headerLink"><Link href={"/browse/list"}>My List</Link></li>
+          <li className="headerLink">TV Shows</li>
+          <li className="headerLink">Movies</li>
+          <li className="headerLink">New & Popular</li>
+          <li className="headerLink">My List</li>
         </ul>
       </div>
       <div className="flex items-center space-x-5 text-sm font-light">
@@ -53,7 +53,6 @@ function Header() {
         <BellIcon className="h-6 w-6 cursor-pointer" />
 
         {/*TODO Exercise 3 Bonus: Wrap <Link> component around <Image> component with href to newly created accounts page (also use pageTemplate for that, href={"/accounts"})*/}
-        <Link href="/accounts">
           <Image
             src={'/' + accountName + '.png'}
             className="cursor-pointer rounded"
@@ -61,7 +60,6 @@ function Header() {
             height={32}
             alt={'Account image'}
           />
-        </Link>
       </div>
     </header>
   )
