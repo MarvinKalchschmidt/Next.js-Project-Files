@@ -1,7 +1,9 @@
 import Image from "next/image"
-import AccountImage from "@/components/AccountImage"
 import Link from "next/link"
 import Head from "next/head"
+
+/* Related to Exercise 4 */
+import AccountImage from "@/components/AccountImage"
 
 const Profiles = () => {
     const account1 = "Marvin"
@@ -29,8 +31,7 @@ const Profiles = () => {
                 </Link>
             </div>
 
-            <div className="flex flex-col h-screen justify-center  mt-28 md:m-0 items-center">
-
+            <div className="flex flex-col h-screen justify-center mt-28 md:m-0 items-center">
                 {/*TODO Exercise 4: Use the existing 'AccountImage' component and tailwindcss utility classes to rebuilt the page as shown in the screenshot. */}
                 {/*TODO Exercise 4 Bonus: Use the breakpoint system of tailwindcss to make the page responsive.*/}
 
