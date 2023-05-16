@@ -34,13 +34,7 @@ const Profiles = () => {
             <div className="flex flex-col h-screen justify-center mt-28 md:m-0 items-center">
                 {/*TODO Exercise 4: Use the existing 'AccountImage' component and tailwindcss utility classes to rebuilt the page as shown in the screenshot. */}
                 {/*TODO Exercise 4 Bonus: Use the breakpoint system of tailwindcss to make the page responsive.*/}
-
-                <div className="text-center pb-10 md:pb-20 text-3xl md:text-5xl">Who's watching?</div>
-                <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-12" >
-                    <AccountImage name={account1} />
-                    <AccountImage name={account2} />
-                    <AccountImage name={account3} />
-                </div>
+                
             </div>
         </main>
     )
