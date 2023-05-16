@@ -17,8 +17,7 @@ function Banner({ nextflixOriginals }: Props) {
   const [movie, setMovie] = useState<Movie | null>(null)
 
   {/*TODO Exercise 2: Implement const setCurrentMovie here, see Recoil useSetRecoilState hook*/} 
-  const setCurrentMovie = useSetRecoilState(currentMovieState)
-
+  
   useEffect(() => {
     setMovie(
       nextflixOriginals[Math.floor(Math.random() * nextflixOriginals.length)]
@@ -52,7 +51,7 @@ function Banner({ nextflixOriginals }: Props) {
           className="bannerButton bg-[gray]/70"
           onClick={() => {
             {/*TODO Exercise 2: Call setCurrentMovie to update currentMovieState with the Thumbnail's movie*/}
-            setCurrentMovie(movie)
+  
           }}
         >
           <InformationCircleIcon className="h-5 w-5 md:h-8 md:w-8" /> More Info

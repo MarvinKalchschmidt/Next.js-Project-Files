@@ -11,14 +11,13 @@ type Props =  {
 
 function Thumbnail({movie }: Props) {
   {/*TODO Exercise 2 (Bonus): Implement const setCurrentMovie here, see Recoil useSetRecoilState hook*/} 
-  const setCurrentMovie = useSetRecoilState(currentMovieState)
 
   return (
     <div
       className={`relative w-full h-28 md:h-44 md:max-w-[320px] aspect-video cursor-pointer md:hover:scale-105 transition duration-200 ease-out`}
       onClick={() => {
         {/*TODO Exercise 2 (Bonus): Call setCurrentMovie to update currentMovieState with the Thumbnail's movie*/}
-        setCurrentMovie(movie)
+       
       }}
     >
       <Image
