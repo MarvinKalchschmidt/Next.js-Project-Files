@@ -87,6 +87,18 @@ Verwende Breakpoints mithilfe von tailwindcss.
 ```pages/accounts.tsx```, ```components/AccountImage.tsx```, ```public/Marvin.png``` , ```public/Vivi.png```, ```public/Caro.png```   
 Du musst ausschließlich in ```account.tsx``` Code hinzufügen.
 
+# Lecture 24.05.2023
+## Topics
+- Rückblick Next.js/Einstieg (Vivi)
+- Übung 1/ Modals (Vivi)
+- App-Routing (Vivi)
+- (Übung / Umstellung auf Next 13)
+- Static-side rendering (Marvin)
+- Server-side rendering (Marvin)
+- Übung 2 (Marvin)
+- SEO (Caro)
+- (Übung)
+
 
 ## Learn More
 
