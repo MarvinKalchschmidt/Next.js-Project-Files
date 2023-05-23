@@ -6,6 +6,7 @@ import { modalState } from "atoms/modalStateAtom"
 import { currentMovieState } from "atoms/movieStateAtom"
 import { Genre, Element } from "typings"
 import ReactPlayer from "react-player/lazy"
+import Link from "next/link"
 
 
 type Props = {
@@ -68,10 +69,12 @@ export default function Modal({ open }: Props) {
                    <div className="absolute top-0 w-full h-full bg-test-gradient opacity-100"></div>
                     <div className="absolute bottom-10 flex w-full items-center justify-between px-14">
                         <div className="flex gap-3">
-                            <button className="modalPlayButton bg-white text-black transition hover:bg-[#e6e6e6]">
-                                <FaPlay className="h-7 w-7 text-black" />
-                                Play
-                            </button>
+                            <Link href={`/watch/movie/${movie?.id}`}>
+                                <button className="modalPlayButton bg-white text-black transition hover:bg-[#e6e6e6]">
+                                    <FaPlay className="h-7 w-7 text-black" />
+                                    Play
+                                </button>
+                            </Link>
                             <button className="modalButton">
                                 <PlusIcon className="h-7 w-7" />
                             </button>
