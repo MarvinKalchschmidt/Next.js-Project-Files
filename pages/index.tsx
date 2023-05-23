@@ -9,7 +9,7 @@ import { useRecoilValue } from 'recoil'
 import { currentMovieState } from '../atoms/movieStateAtom'
 import Modal from '@/components/Modal'
 import { modalState } from 'atoms/modalStateAtom'
-import Modal2 from '@/components/Modal2'
+
 
 type Props = {
   nextflixOriginals: Movie[]
@@ -50,10 +50,9 @@ const Home = ({
 
       <Header />   
 
-      <Modal open={showModal}/> 
+      <Modal open={showModal}/>
       {/**<Modal2></Modal2>  */}
 
-        
       
       <main className="relative pl-4 pb-24 lg:space-y-24 lg:pl-16 ">
         <Banner nextflixOriginals={nextflixOriginals} />
