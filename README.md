@@ -101,14 +101,26 @@ Verwende Breakpoints mithilfe von tailwindcss.
 Du musst ausschließlich in ```account.tsx``` Code hinzufügen.
 
 ## Exercise 5/ Recap last week: Styling with Tailwind
+### Aufgabe:
 Style die ```Modal.tsx```-Seite, mithilfe verschiedener Tailwind-Klassen, damit die Texte wie im Screenshot angeordnet sind. Das Modal findest du bereits fertig vorbereitet im ```components```-Ordner, nur das Styling muss noch angepasst werden.
 Als Hilfe kannst du wieder das Tailwind-Cheatsheet verwenden.
 
-## Exercise 6/
+## Exercise 6/ SSR
+Wenn du auf einen Play-Button drückst, kannst du den entsprechenden Film-Trailer auf einer separaten Seite anschauen. Da dies bisher nur 
+client-seitig passiert, sollst du nun diese Funktion durch SSR (Server Side Rendering) implementieren.
+
+### Aufgabe:
+1. Schiebe die Logik im ```useEffect```-Hook in die ```getServerSideProps``` von Next.js, um SSR für die Movie-Daten zu aktivieren. Die ```getServerSideProps```-Funktion soll ein Objekt vom Typ ```{props: { movieData : data }}``` zurückgeben.
+2. Übergib der ```Movie```-Server-Componente das eben beschriebene ```props```-Objekt als Parameter
+3. Benutze die getUrlTag-Funktion um die aus den übergebenen Daten den URL-Tag (Beispiel: https://www.youtube.com/watch?v=**dQw4w9WgXcQ**) für YouTube zu lesen und füge ihn dem ```url```-Attribut des ```ReactPlayer```-Elements hinzu
+
+### Tipp: 
+Du solltest keine State-Hooks (z.B. ```useState()```) benötigen.
 
 ## Exercise 7/ SEO
-Öffne Google Lighthouse im Google Chrome Browser und schau dir die SEO-Ergebnisse für die ```index.tsx```- und die ```player.tsx```-Seite an.
-Folge den Tipps von Lighthouse, um die ```player.tsx```-Seite zu verbessern sodass die Seite zum Schluss auch 100% optimiert ist.
+### Aufgabe:
+Öffne Google Lighthouse im Google Chrome Browser und schau dir die SEO-Ergebnisse für die ```index.tsx```- und die ```watch/movie/[id].tsx```-Seite an.
+Folge den Tipps von Lighthouse, um die ```watch/movie/[id].tsx```-Seite zu verbessern sodass die Seite zum Schluss auch 100% optimiert ist.
 
 
 ## Learn More
