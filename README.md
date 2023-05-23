@@ -24,9 +24,9 @@ To follow along please complete the following steps:
 - Wiederholung Next.js (https://forms.office.com/r/TfuYN0fPCn)
 - Übung 5/ Styling with Tailwind
 - App-Routing
-- Static Side Rendering
+- Static Side Generating
 - Server Side Rendering
-- Übung 6/ 
+- Übung 6/ Server Side Rendering
 - SEO
 - Übung 7/ SEO
 - Wiederholung Teil 2 (https://forms.office.com/r/cTzPvvkurb)
