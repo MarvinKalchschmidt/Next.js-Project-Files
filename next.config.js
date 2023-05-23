@@ -4,6 +4,10 @@ const nextConfig = {
   images: {
     domains: ['image.tmdb.org']    
   },
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en',
+  },
 };
  
 module.exports = nextConfig;

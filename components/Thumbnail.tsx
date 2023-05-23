@@ -4,6 +4,7 @@ import { Movie } from '../typings'
 /*Related to Exercise 2*/
 import { currentMovieState } from '../atoms/movieStateAtom'
 import { useSetRecoilState } from 'recoil'
+import { modalState } from 'atoms/modalStateAtom'
 
 type Props =  {
   movie: Movie 
@@ -12,6 +13,7 @@ type Props =  {
 function Thumbnail({movie }: Props) {
   {/*TODO Exercise 2 (Bonus): Implement const setCurrentMovie here, see Recoil useSetRecoilState hook*/} 
   const setCurrentMovie = useSetRecoilState(currentMovieState)
+  const showModal = useSetRecoilState(modalState)
 
   return (
     <div
@@ -19,6 +21,7 @@ function Thumbnail({movie }: Props) {
       onClick={() => {
         {/*TODO Exercise 2 (Bonus): Call setCurrentMovie to update currentMovieState with the Thumbnail's movie*/}
         setCurrentMovie(movie)
+        showModal(true)
       }}
     >
       <Image

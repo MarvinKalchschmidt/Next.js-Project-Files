@@ -8,6 +8,7 @@ import Image from 'next/image'
 /*Related to Exercise 2*/
 import { currentMovieState } from '../atoms/movieStateAtom'
 import { useSetRecoilState } from 'recoil'
+import { modalState } from 'atoms/modalStateAtom'
 
 type Props = {
   nextflixOriginals: Movie[]
@@ -18,6 +19,8 @@ function Banner({ nextflixOriginals }: Props) {
 
   {/*TODO Exercise 2: Implement const setCurrentMovie here, see Recoil useSetRecoilState hook*/} 
   const setCurrentMovie = useSetRecoilState(currentMovieState)
+  const showModal = useSetRecoilState(modalState)
+
 
   useEffect(() => {
     setMovie(
@@ -53,6 +56,7 @@ function Banner({ nextflixOriginals }: Props) {
           onClick={() => {
             {/*TODO Exercise 2: Call setCurrentMovie to update currentMovieState with the Thumbnail's movie*/}
             setCurrentMovie(movie)
+            showModal(true)
           }}
         >
           <InformationCircleIcon className="h-5 w-5 md:h-8 md:w-8" /> More Info
