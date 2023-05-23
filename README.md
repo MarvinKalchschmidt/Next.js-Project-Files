@@ -63,6 +63,7 @@ Erstelle eine Variable, die zum ```currentMovieState``` subscribed ist. Nutze hi
 Ergänze die ```<title>```-Komponente im ```<Head>``` um den Titel des Films, der in ```currentMovieState``` gespeichert ist, sofern dieser nicht ```null``` ist. Der Titel soll das Format "*Titel des gedrückten Banner-Films* - Nextflix" annehmen.
 4. Bonus-Aufgabe:
 Implementiere die selbe Funktion für das Klicken auf ein Thumbnail in der ```Thumbnail.tsx```-Komponente. Der Titel soll das Format "*Titel des gedrückten Thumbnail-Films* - Nextflix" annehmen.
+
  
 ### Tipp: 
 Innerhalb von ```<title>``` bzw. TSX-Code können Bedingungen verwendet werden:
@@ -99,9 +100,16 @@ Verwende Breakpoints mithilfe von tailwindcss.
 ```pages/accounts.tsx```, ```components/AccountImage.tsx```, ```public/Marvin.png``` , ```public/Vivi.png```, ```public/Caro.png```   
 Du musst ausschließlich in ```account.tsx``` Code hinzufügen.
 
-## Exercise 5/
+## Exercise 5/ Recap last week: Styling Tailwind
+Style die ```Modal.tsx```-Seite, mithilfe verschiedener Tailwind-Klassen, damit die Texte wie im Screenshot angeordnet sind. Das Modal findest du bereits fertig vorbereitet im ```components```-Ordner, nur das Styling muss noch angepasst werden.
+Als Hilfe kannst du wieder das Tailwind-Cheatsheet verwenden.
 
 ## Exercise 6/
+
+## Exercise 7/SEO
+Öffne Google Lighthouse im Google Chrome Browser und schau dir die SEO-Ergebnisse für die ```index.tsx``` - und die ```player.tsx``` - Seite an.
+Folge den Tipps von Lighthouse, um die ```player.tsx``` - Seite zu verbessern sodass die Seite zum Schluss auch 100% optimiert ist.
+
 
 ## Learn More
 
