@@ -24,7 +24,7 @@ export default function Modal({open}: Props){
     
         async function fetchMovie() {
           const data = await fetch(
-            `https://api.themoviedb.org/3/${movie?.media_type === 'tv' ? 'tv' : 'movie'}/${movie?.id}?api_key=${process.env.NEXT_PUBLIC_API_KEY}&language=en-US&append_to_response=videos`)
+            `https://api.themoviedb.org/3/movie/${movie?.id}?api_key=${process.env.NEXT_PUBLIC_API_KEY}&language=en-US&append_to_response=videos`)
             .then((response) => response.json())
           if (data?.videos) {
             const index = data.videos.results.findIndex(
@@ -52,20 +52,23 @@ export default function Modal({open}: Props){
                     <XIcon className="h-6 w-6" />
                 </button>
 
-                <div className="relative w-full aspect-video overflow-hidden">
-                    {open && <ReactPlayer
-                        url={`https://www.youtube.com/watch?v=${trailer}`}
-                        width={"100%"}
-                        height={"100%"}
-                        style={{ position: 'absolute', top: '0', left: '0', objectFit: 'cover' }}
-                        playing={true}
-                        controls={false}
-                        muted={muted}
-                    />}
+                <div className="relative overflow-hidden">
+                    <div className="aspect-video">
+                        {open && <ReactPlayer
+                            url={`https://www.youtube.com/watch?v=${trailer}`}
+                            width={"100%"}
+                            height={"100%"}
+                            style={{ position: 'absolute', top: '0', left: '0', objectFit: 'cover'}}
+                            playing={true}
+                            controls={false}
+                            muted={muted}
+                        />}
+                    </div>
+                    
                    <div className="absolute top-0 w-full h-full bg-test-gradient opacity-100"></div>
                     <div className="absolute bottom-10 flex w-full items-center justify-between px-14">
                         <div className="flex gap-3">
-                            <button className="flex items-center gap-x-2 rounded bg-white px-12 text-xl font-bold text-black transition hover:bg-[#e6e6e6]">
+                            <button className="modalPlayButton bg-white text-black transition hover:bg-[#e6e6e6]">
                                 <FaPlay className="h-7 w-7 text-black" />
                                 Play
                             </button>

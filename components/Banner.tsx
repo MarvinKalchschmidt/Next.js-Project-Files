@@ -9,6 +9,7 @@ import Image from 'next/image'
 import { currentMovieState } from '../atoms/movieStateAtom'
 import { useSetRecoilState } from 'recoil'
 import { modalState } from 'atoms/modalStateAtom'
+import Link from 'next/link'
 
 type Props = {
   nextflixOriginals: Movie[]
@@ -46,11 +47,12 @@ function Banner({ nextflixOriginals }: Props) {
         {movie?.overview}
       </p>
       <div className="flex space-x-3">
-        <button className="bannerButton bg-white text-black">
-          <FaPlay className="h-4 w-4 text-black md:h-7 md:w-7" />
-          Play
-        </button>
-
+        <Link href={`/watch/movie/${movie?.id}`}>
+          <button className="bannerButton bg-white text-black">     
+            <FaPlay className="h-4 w-4 text-black md:h-7 md:w-7" />
+            Play
+          </button>
+        </Link>
         <button
           className="bannerButton bg-[gray]/70"
           onClick={() => {

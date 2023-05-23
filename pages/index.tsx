@@ -9,6 +9,7 @@ import { useRecoilValue } from 'recoil'
 import { currentMovieState } from '../atoms/movieStateAtom'
 import Modal from '@/components/Modal'
 import { modalState } from 'atoms/modalStateAtom'
+import { networkInterfaces } from 'os'
 
 
 type Props = {
@@ -93,7 +94,7 @@ export const getServerSideProps = async () => {
     fetch(requests.fetchHorrorMovies).then((res) => res.json()),
     fetch(requests.fetchRomanceMovies).then((res) => res.json()),
     fetch(requests.fetchDocumentaries).then((res) => res.json()),
-  ])
+  ])  
 
   return {
     props: {
