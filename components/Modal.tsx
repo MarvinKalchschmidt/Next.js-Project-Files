@@ -10,10 +10,10 @@ import ReactPlayer from "react-player/lazy"
 
 
 type Props = {
-    open: boolean,  
+    open: boolean,
 }
 
-export default function Modal({open}: Props){
+export default function Modal({ open }: Props) {
     const [trailer, setTrailer] = useState("")
     const [showModal, setShowModal] = useRecoilState(modalState)
     const [movie, setMovie] = useRecoilState(currentMovieState)
@@ -22,22 +22,22 @@ export default function Modal({open}: Props){
 
     useEffect(() => {
         if (!movie) return
-    
+
         async function fetchMovie() {
-          const data = await fetch(
-            `https://api.themoviedb.org/3/${movie?.media_type === 'tv' ? 'tv' : 'movie'}/${movie?.id}?api_key=${process.env.NEXT_PUBLIC_API_KEY}&language=en-US&append_to_response=videos`)
-            .then((response) => response.json())
-          if (data?.videos) {
-            const index = data.videos.results.findIndex(
-              (element: Element) => element.type === 'Trailer'
-            )
-            setTrailer(data.videos?.results[index]?.key)
-          }
-          if (data?.genres) {
-            setGenres(data.genres)
-          }
+            const data = await fetch(
+                `https://api.themoviedb.org/3/${movie?.media_type === 'tv' ? 'tv' : 'movie'}/${movie?.id}?api_key=${process.env.NEXT_PUBLIC_API_KEY}&language=en-US&append_to_response=videos`)
+                .then((response) => response.json())
+            if (data?.videos) {
+                const index = data.videos.results.findIndex(
+                    (element: Element) => element.type === 'Trailer'
+                )
+                setTrailer(data.videos?.results[index]?.key)
+            }
+            if (data?.genres) {
+                setGenres(data.genres)
+            }
         }
-    
+
         fetchMovie()
     }, [movie])
 
@@ -63,7 +63,7 @@ export default function Modal({open}: Props){
                         controls={false}
                         muted={muted}
                     />}
-                   <div className="absolute top-0 w-full h-full bg-test-gradient opacity-100"></div>
+                    <div className="absolute top-0 w-full h-full bg-test-gradient opacity-100"></div>
                     <div className="absolute bottom-10 flex w-full items-center justify-between px-10">
                         <div className="flex space-x-3">
                             <button className="flex items-center gap-x-2 rounded bg-white px-12 text-xl font-bold text-black transition hover:bg-[#e6e6e6]">
@@ -71,7 +71,7 @@ export default function Modal({open}: Props){
                                 Play
                             </button>
                             <button className="modalButton">
-                                <PlusIcon className="h-7 w-7" />  
+                                <PlusIcon className="h-7 w-7" />
                             </button>
                             <button className="modalButton">
                                 <ThumbUpIcon className="h-6 w-6" />
@@ -85,13 +85,13 @@ export default function Modal({open}: Props){
                             )}
                         </button>
                     </div>
-                </div> 
-            
+                </div>
+
                 <div className="flex space-x-16 rounded-b-md bg-[#181818] px-10">
-                    <div className="space-y-8 text-lg">
+                    <div className="space-y-8 mb-5 text-lg">
                         <div className="flex items-center space-x-2 text-base">
                             <p className="font-bold text-green-400">
-                               {"95% Match"}
+                                {"95% Match"}
                             </p>
                             <p className="font-semibold">
                                 {movie?.release_date || movie?.first_air_date}
@@ -121,6 +121,7 @@ export default function Modal({open}: Props){
                         </div>
                     </div>
                 </div>
-            </div>        
+            </div>
         </div>
-    )}
+    )
+}
