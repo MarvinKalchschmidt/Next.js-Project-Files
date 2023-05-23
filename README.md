@@ -100,15 +100,15 @@ Verwende Breakpoints mithilfe von tailwindcss.
 ```pages/accounts.tsx```, ```components/AccountImage.tsx```, ```public/Marvin.png``` , ```public/Vivi.png```, ```public/Caro.png```   
 Du musst ausschließlich in ```account.tsx``` Code hinzufügen.
 
-## Exercise 5/ Recap last week: Styling Tailwind
+## Exercise 5/ Recap last week: Styling with Tailwind
 Style die ```Modal.tsx```-Seite, mithilfe verschiedener Tailwind-Klassen, damit die Texte wie im Screenshot angeordnet sind. Das Modal findest du bereits fertig vorbereitet im ```components```-Ordner, nur das Styling muss noch angepasst werden.
 Als Hilfe kannst du wieder das Tailwind-Cheatsheet verwenden.
 
 ## Exercise 6/
 
-## Exercise 7/SEO
-Öffne Google Lighthouse im Google Chrome Browser und schau dir die SEO-Ergebnisse für die ```index.tsx``` - und die ```player.tsx``` - Seite an.
-Folge den Tipps von Lighthouse, um die ```player.tsx``` - Seite zu verbessern sodass die Seite zum Schluss auch 100% optimiert ist.
+## Exercise 7/ SEO
+Öffne Google Lighthouse im Google Chrome Browser und schau dir die SEO-Ergebnisse für die ```index.tsx```- und die ```player.tsx```-Seite an.
+Folge den Tipps von Lighthouse, um die ```player.tsx```-Seite zu verbessern sodass die Seite zum Schluss auch 100% optimiert ist.
 
 
 ## Learn More
