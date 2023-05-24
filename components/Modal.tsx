@@ -94,26 +94,26 @@ export default function Modal({ open }: Props) {
 
                 {/* Exercise 4: Add the missing TailwindCSS using Tailwind's flex classes (flex, flex-col, flex-row, flex-wrap).*/}           
                 <div className="flex flex-col px-6 gap-6 mb-10 bg-[#181818] md:px-14 ">                                   
-                    <div className="flex flex-wrap items-center gap-2.5 text-base">
-                        <span className="font-semibold text-green-400">97% Match</span>
-                        <span className="font-semibold">{movie?.release_date || movie?.first_air_date}</span>
-                        <span className="border border-white/40 rounded-[3px] px-2 text-xs">HD</span>
+                    <div className="">
+                        <span className="">97% Match</span>
+                        <span className="">{movie?.release_date || movie?.first_air_date}</span>
+                        <span className="">HD</span>
                     </div>
-                    <div className="flex flex-col justify-between gap-10 md:flex-row font-medium">
-                        <p className="basis-3/4 ">{movie?.overview}</p>
-                        <div className="basis-1/4 flex flex-col gap-3 text-base">
+                    <div className="">
+                        <p className="">{movie?.overview}</p>
+                        <div className="">
                             <div>
-                                <span className="text-[gray]">Genres:</span>{' '}
+                                <span className="">Genres:</span>{' '}
                                 {genres.map((genre) => genre.name).join(', ')}
                             </div>
 
                             <div>
-                                <span className="text-[gray]">Original language:</span>{' '}
+                                <span className="">Original language:</span>{' '}
                                 {movie?.original_language}
                             </div>
 
                             <div>
-                                <span className="text-[gray]">Total votes:</span>{' '}
+                                <span className="">Total votes:</span>{' '}
                                 {movie?.vote_count}
                             </div>
                         </div>
