@@ -21,19 +21,11 @@ export default function Movie({movieData}: MovieData) {
   }
  
   return (
-      <div className={`h-screen`}>   
-
-        <Head>
-          <title>
-              {`${movieData?.title || 'Home'} - Nextflix`} 
-          </title>
-          <link rel="icon" href="/favicon.ico" />
-          <meta name="description" content="Nextflix Movie Page"/>
-        </Head> 
-
+      <div className={`h-screen`}>  
+      
         <div className="absolute px-4 pt-[18px] lg:px-16 top-0 left-0">
           <Link href="/">
-              <Image
+              <img
                   src="/nextflix.png"
                   alt="Nextflix logo"
                   width={100}
